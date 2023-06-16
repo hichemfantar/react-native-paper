@@ -16,6 +16,7 @@ const InputLabel = (props: InputLabelProps) => {
     label,
     labelError,
     onLayoutAnimatedText,
+    onLabelTextLayout,
     hasActiveOutline,
     activeColor,
     placeholderStyle,
@@ -126,6 +127,7 @@ const InputLabel = (props: InputLabelProps) => {
       <AnimatedText
         variant="bodySmall"
         onLayout={onLayoutAnimatedText}
+        onTextLayout={onLabelTextLayout}
         style={[
           placeholderStyle,
           {

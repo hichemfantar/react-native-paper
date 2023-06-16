@@ -64,6 +64,7 @@ const TextInputOutlined = ({
   onBlur,
   onChangeText,
   onLayoutAnimatedText,
+  onLabelTextLayout,
   onLeftAffixLayoutChange,
   onRightAffixLayoutChange,
   left,
@@ -188,6 +189,7 @@ const TextInputOutlined = ({
   const labelProps = {
     label,
     onLayoutAnimatedText,
+    onLabelTextLayout,
     placeholderOpacity,
     labelError: error,
     placeholderStyle,
@@ -366,6 +368,9 @@ const TextInputOutlined = ({
                   ? 'right'
                   : 'left',
                 paddingHorizontal: INPUT_PADDING_HORIZONTAL,
+                minWidth:
+                  parentState.labelTextLayout.width +
+                  2 * INPUT_PADDING_HORIZONTAL,
               },
               Platform.OS === 'web' && { outline: 'none' },
               adornmentStyleAdjustmentForNativeInput,

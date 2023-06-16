@@ -68,6 +68,7 @@ const TextInputFlat = ({
   onBlur,
   onChangeText,
   onLayoutAnimatedText,
+  onLabelTextLayout,
   onLeftAffixLayoutChange,
   onRightAffixLayoutChange,
   left,
@@ -251,6 +252,7 @@ const TextInputFlat = ({
   const labelProps = {
     label,
     onLayoutAnimatedText,
+    onLabelTextLayout,
     placeholderOpacity,
     labelError: error,
     placeholderStyle: styles.placeholder,
@@ -403,6 +405,8 @@ const TextInputFlat = ({
                 : I18nManager.getConstants().isRTL
                 ? 'right'
                 : 'left',
+              minWidth:
+                parentState.labelTextLayout.width + 2 * FLAT_INPUT_OFFSET,
             },
             Platform.OS === 'web' && { outline: 'none' },
             adornmentStyleAdjustmentForNativeInput,

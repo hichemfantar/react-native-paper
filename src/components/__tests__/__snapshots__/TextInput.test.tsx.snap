@@ -71,6 +71,7 @@ exports[`correctly applies a component as the text label 1`] = `
         maxFontSizeMultiplier={1.5}
         numberOfLines={1}
         onLayout={[Function]}
+        onTextLayout={[Function]}
         style={
           Object {
             "color": "rgba(103, 80, 164, 1)",
@@ -191,6 +192,7 @@ exports[`correctly applies a component as the text label 1`] = `
             "fontWeight": undefined,
             "letterSpacing": 0.15,
             "lineHeight": undefined,
+            "minWidth": 65,
             "textAlign": "left",
             "textAlignVertical": "center",
           },
@@ -280,6 +282,7 @@ exports[`correctly applies default textAlign based on default RTL 1`] = `
         maxFontSizeMultiplier={1.5}
         numberOfLines={1}
         onLayout={[Function]}
+        onTextLayout={[Function]}
         style={
           Object {
             "color": "rgba(103, 80, 164, 1)",
@@ -384,6 +387,7 @@ exports[`correctly applies default textAlign based on default RTL 1`] = `
             "fontWeight": undefined,
             "letterSpacing": 0.15,
             "lineHeight": undefined,
+            "minWidth": 65,
             "textAlign": "left",
             "textAlignVertical": "center",
           },
@@ -507,6 +511,7 @@ exports[`correctly applies height to multiline Outline TextInput 1`] = `
           maxFontSizeMultiplier={1.5}
           numberOfLines={1}
           onLayout={[Function]}
+          onTextLayout={[Function]}
           style={
             Object {
               "color": "rgba(103, 80, 164, 1)",
@@ -606,6 +611,7 @@ exports[`correctly applies height to multiline Outline TextInput 1`] = `
               "fontWeight": undefined,
               "letterSpacing": 0.15,
               "lineHeight": undefined,
+              "minWidth": 65,
               "paddingHorizontal": 16,
               "textAlign": "left",
               "textAlignVertical": "top",
@@ -697,6 +703,7 @@ exports[`correctly applies paddingLeft from contentStyleProp 1`] = `
         maxFontSizeMultiplier={1.5}
         numberOfLines={1}
         onLayout={[Function]}
+        onTextLayout={[Function]}
         style={
           Object {
             "color": "rgba(103, 80, 164, 1)",
@@ -801,6 +808,7 @@ exports[`correctly applies paddingLeft from contentStyleProp 1`] = `
             "fontWeight": undefined,
             "letterSpacing": 0.15,
             "lineHeight": undefined,
+            "minWidth": 65,
             "textAlign": "left",
             "textAlignVertical": "center",
           },
@@ -892,6 +900,7 @@ exports[`correctly applies textAlign center 1`] = `
         maxFontSizeMultiplier={1.5}
         numberOfLines={1}
         onLayout={[Function]}
+        onTextLayout={[Function]}
         style={
           Object {
             "color": "rgba(103, 80, 164, 1)",
@@ -996,6 +1005,7 @@ exports[`correctly applies textAlign center 1`] = `
             "fontWeight": undefined,
             "letterSpacing": 0.15,
             "lineHeight": undefined,
+            "minWidth": 65,
             "textAlign": "center",
             "textAlignVertical": "center",
           },
@@ -1085,6 +1095,7 @@ exports[`correctly renders left-side affix adornment, and right-side icon adornm
         maxFontSizeMultiplier={1.5}
         numberOfLines={1}
         onLayout={[Function]}
+        onTextLayout={[Function]}
         style={
           Object {
             "color": "rgba(103, 80, 164, 1)",
@@ -1189,6 +1200,7 @@ exports[`correctly renders left-side affix adornment, and right-side icon adornm
             "fontWeight": undefined,
             "letterSpacing": 0.15,
             "lineHeight": undefined,
+            "minWidth": 65,
             "textAlign": "left",
             "textAlignVertical": "center",
           },
@@ -1468,6 +1480,7 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
         maxFontSizeMultiplier={1.5}
         numberOfLines={1}
         onLayout={[Function]}
+        onTextLayout={[Function]}
         style={
           Object {
             "color": "rgba(103, 80, 164, 1)",
@@ -1572,6 +1585,7 @@ exports[`correctly renders left-side icon adornment, and right-side affix adornm
             "fontWeight": undefined,
             "letterSpacing": 0.15,
             "lineHeight": undefined,
+            "minWidth": 65,
             "textAlign": "left",
             "textAlignVertical": "center",
           },
