@@ -172,7 +172,8 @@ const TextInputExample = () => {
                   }}
                 />
               }
-              right={<TextInput.Affix text="/100" />}
+              maxLength={100}
+              right={<TextInput.Affix text={`${text.length}/100`} />}
             />
             <TextInput
               style={styles.inputContainerStyle}
@@ -182,7 +183,8 @@ const TextInputExample = () => {
               onChangeText={(text) =>
                 inputActionHandler('customIconText', text)
               }
-              right={<TextInput.Affix text="/100" />}
+              maxLength={100}
+              right={<TextInput.Affix text={`${customIconText.length}/100`} />}
               left={
                 <TextInput.Icon
                   icon={() => (
@@ -259,7 +261,8 @@ const TextInputExample = () => {
                   }}
                 />
               }
-              right={<TextInput.Affix text="/100" />}
+              maxLength={100}
+              right={<TextInput.Affix text={`${outlinedText.length}/100`} />}
             />
             <TextInput
               mode="outlined"
@@ -619,6 +622,7 @@ const TextInputExample = () => {
               <TextInput
                 label="Input with text align center"
                 style={styles.centeredText}
+                activeUnderlineColor="transparent"
               />
             </View>
             <View style={styles.inputContainerStyle}>
